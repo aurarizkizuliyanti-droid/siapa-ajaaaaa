@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤍 tuy tau gaa</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffe4ec,#fff6c7,#dff7ff);
+    overflow:hidden;
+    padding:20px;
+}
+
+.card{
+    max-width:550px;
+    background:white;
+    border-radius:25px;
+    padding:25px;
+    box-shadow:0 15px 35px rgba(0,0,0,.15);
+    animation:fade .8s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+img{
+    width:100%;
+    border-radius:18px;
+    margin-bottom:20px;
+}
+
+h1{
+    text-align:center;
+    color:#ff5d8f;
+    margin-bottom:15px;
+}
+
+p{
+    color:#555;
+    line-height:1.8;
+    font-size:15px;
+    white-space:pre-line;
+}
+
+.footer{
+    margin-top:20px;
+    text-align:right;
+    color:#ff5d8f;
+    font-weight:bold;
+}
+
+.item{
+    position:fixed;
+    top:-30px;
+    font-size:22px;
+    animation:fall linear infinite;
+}
+
+@keyframes fall{
+    to{
+        transform:translateY(110vh);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="ataaaa.jpg" alt="Photo">
+
+<h1>🤍 A Little Message</h1>
+
+<p>
+Hai tuy, i heard from nita, about ur parents. i hope you okay, maybe that things hurt you so bad, but please remember that yoy are loved ta. i hope you remember that.
+
+tuy, aku nggak bakalan ngomong kamu buat untuk terus merasa baik-baik aja, aku paham kok, tapi aku berharap jangan sampai sakit itu menguasai kamu, apalagi sampai melukai diri kamu sendiri ya tuy. aku juga ikut sedih kalo semisal kamu sedih.
+
+aku nggak tau rasanya bagaimana berada diposisi kamu tuy, aku hanya tau bahwa kamu pasti sedih. aku nggak bakal bilang "udah ta gapapa" atau "semua bakal berlalu" karena mungkin buat kamu yang merasakan, itu adalah hal yang berat.
+
+semoga kedepannya hari-harimu bisa dijalani dengan baik dan bahagia ya atuy, be happy ya atuy.
+
+maaf ya aku ngirim kaya gini, i just want to, you remember that there are many people love you, and care bout you.
+
+Safira Artha🤍✨
+</p>
+
+<div class="footer">
+🤍✨
+</div>
+
+</div>
+
+<script>
+const emoji=["🤍","💗","💖","🌸","✨"];
+
+for(let i=0;i<40;i++){
+    let e=document.createElement("div");
+    e.className="item";
+    e.innerHTML=emoji[Math.floor(Math.random()*emoji.length)];
+    e.style.left=Math.random()*100+"vw";
+    e.style.animationDuration=(4+Math.random()*5)+"s";
+    e.style.animationDelay=Math.random()*4+"s";
+    document.body.appendChild(e);
+}
+</script>
+
+</body>
+</html>
